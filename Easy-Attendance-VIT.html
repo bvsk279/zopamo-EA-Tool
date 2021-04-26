@@ -6,6 +6,7 @@
     <title>Easy Atendance VIT</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
     <style>
         *{
             padding: 0;
@@ -24,7 +25,7 @@
             border-bottom: 2px solid rgb(60, 215, 253);
             padding-bottom: 5px;
         }
-        h3{
+        div{
             width: 50%;
             margin: auto;
             position: absolute;
@@ -37,20 +38,48 @@
             font-size: 22px;
             
         }
+        h3{
+            font-weight: 600;
+            font-size: 22px;
+        }
+        section{
+            font-size: 0.8em;
+            font-weight: 500;
+            line-height: 1.6em;
+        }
         span{
             color: rgb(60, 150, 253);
+        }
+        span.day-format{
+            /* color: rgb(86, 158, 240); */
+            font-style: italic;
+        }
+        .responsive{
+            display: none;
         }
         @media (min-width: 100px) and (max-width: 415px){
             h3{
                 font-size: 18px;
             }
+            .responsive{
+                display: block;
+            }
+        }
+        @media only screen and (max-width: 720px){
+            .responsive{
+                display: block;
+            }
         }
     </style>
 </head>
 <body>
-    <p>Zopamo.com&nbsp;&nbsp;under&nbsp;&nbsp;Maintenance</p>
-    <h3><span>Easy Attendance Tool&nbsp;</span> is Currently under Maintenance. <br/><br/>From <span class="day-format">Monday, 26-04-2021 6 PM IST</span> till <span class="day-format">Thursday, 29 April 2021 6 PM IST</span>.<br/>Please check back soon.</h3>
-
-
+    <p>zopamo.com&nbsp;is&nbsp;under&nbsp;Maintenance</p>
+    <div>
+        <h4><span>Easy Attendance Tool&nbsp;</span> is Currently under Maintenance.</h4>
+        <br/>
+        <section>Expected :<br/> From <span class="day-format">Monday, 26-04-2021 6 PM IST</span> <br class="responsive">Till <span class="day-format">Thursday, 29-04-2021 6 PM IST</span></section>
+        <br/>
+        <h4>Sorry, for the Inconvenience.</h4>
+    </div>
 </body>
 </html>
